@@ -19,13 +19,14 @@
 // Create a card for each of the articles and add the card to the DOM.
 
 
-const ArticleCards = (attr, articletype) => {
+
+const ArticleCards = (attr) => {
     const card = document.createElement('div');
     card.classList.add('card');
 
     const headline = document.createElement('div');
     headline.classList.add('headline');
-    headline.textContent = attr.data.articles.articletype.headline;
+    headline.textContent = attr.data.articles.headline;
     card.appendChild(headline);
 
     const author = document.createElement('div');
@@ -37,16 +38,21 @@ const ArticleCards = (attr, articletype) => {
     author.appendChild(imgContainer);
 
     const img = document.createElement('img');
-    img.src = attr.data.articles.articletype.authorPhoto;
+    img.src = attr.data.articles.authorPhoto;
     imgContainer.appendChild(img);
 
     const name = document.createElement('span');
-    name.textContent = attr.data.articles.articletype.authorName;
+    name.textContent = attr.data.articles.authorName;
     author.appendChild(name);
 
     return card;
 }
 
-
+const appendToPage = card => {
+    const cardsContainer = document.querySelector('.cards-container');
+    cardsContainer.appendChild(card)
+}
 
 axios.get('https://lambda-times-backend.herokuapp.com/articles')
+    .then(ArticleCards)
+    .then(appendToPage)
