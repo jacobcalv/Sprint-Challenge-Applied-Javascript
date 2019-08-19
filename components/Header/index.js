@@ -27,7 +27,7 @@ function Header(attr) {
     head.appendChild(date);
 
     const title = document.createElement('h1');
-    head.textContent = attr.title;
+    title.textContent = attr.title;
     head.appendChild(title);
 
     const temp = document.createElement('span');
@@ -43,4 +43,3 @@ data.forEach(attr => {
     let newHeader = Header(attr)
     container.appendChild(newHeader)
 })
-
