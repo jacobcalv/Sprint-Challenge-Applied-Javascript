@@ -27,19 +27,19 @@ In meeting the minimum viable product (MVP) specifications listed below, you sho
 Demonstrate your understanding of this week's concepts by answering the following free-form questions.
 
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager
-
+<!-- DONE -->
 1. What is the DOM?
-
+    DOM stands for document object model which is a tree like structure that is used to access, add, and manipulated data in html from your javascript file. 
 2. What is an event?
-
+    An event is an action that has been done on the page this could be as simple as on page load event or it could hovering over an object. 
 3. What is an event listener?
-
+    An event listener as stated in the title, listens for an event to happen such as a click on an object and then a function is triggered to run. 
 4. Why would we convert a NodeList into an Array?
-
+    We convert a nodeList to an array so that we can manipulate the elements in javascript. 
 5. What is a component?
-
+    A resuable piece of code that can be reused to build elements that share similar properties and functions. 
 ### Git Set up
-
+<!-- DONE -->
 * [ ] Fork the project into your GitHub user account
 * [ ] Clone the forked project into a directory on your machine
 * [ ] Create a pull request before you start working on the project requirements.  You will continuously push your updates throughout the project.
@@ -49,11 +49,11 @@ Edit this document to include your answers after each question. Make sure to lea
 
 Your finished project must include all of the following requirements:
 
-* [ ] Look through the HTML code and familiarize yourself with the different sections. Some of them already exist, but some need to be filled in. DO NOT add any code to the HTML file itself.
+* [ y] Look through the HTML code and familiarize yourself with the different sections. Some of them already exist, but some need to be filled in. DO NOT add any code to the HTML file itself.
 
-* [ ] Following the instructions in the `Header/index.js` file, create the Header component. 
+* [y ] Following the instructions in the `Header/index.js` file, create the Header component. 
 
-* [ ] Following the instructions in the `Tabs/index.js` file, create individual Tabs components.
+* [ y] Following the instructions in the `Tabs/index.js` file, create individual Tabs components.
 
 * [ ] Following the instructions in the `Cards/index.js` file, create individual Cards components.
 
